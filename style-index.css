@@ -1,0 +1,393 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@700&family=Open+Sans:wght@300&display=swap');
+
+body{
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.row1{
+    background: url(images/download.svg);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+    max-width: 1600px;
+    height: 100vh;
+}
+header{
+    position: fixed;
+    width: 100%;
+    height: 60px;
+    font-family: 'Mulish' sans-serif;
+    background-color: #ffffff;
+    box-shadow: rgb(0 0 0 / 5%) 0px 5px 10px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+}
+nav ul{
+    list-style: none;
+}nav ul li{
+    display: inline-block;
+    margin: 10px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: rgb(109, 131, 242);
+    text-transform: uppercase;
+    font-weight: 700;
+}
+nav ul li a:hover{
+    color: brown;
+}
+.logo{
+    margin-top:16px ;
+}
+.logo a{
+    text-decoration: none;
+    color:rgb(109, 131, 242) ;
+    font-size: 30px;
+    font-weight: 900;
+}
+.Con-btn button{
+    margin: 22px;
+    width: 90px;
+    height: 30px;
+    background-color: rgb(109, 131, 242);
+    border: none;
+    border-radius: 7px;
+}
+.Con-btn button a{
+    color: #fff;
+    text-decoration: none;
+}
+.Con-btn button:hover{
+   opacity: 0.5;
+}
+i.fa-bars, i.fa-times{
+    display: none;
+}
+.box1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 100px;
+}
+#greet-text{
+    font-size: 30px;
+    font-family: 'Mulish', sans-serif;
+}
+#name-text{
+    color: rgb(109, 131, 242);
+}
+.img-box img{
+    border-radius: 300px;
+}
+.img-box img:hover{
+    opacity: 0.7;
+}
+.down-btn button{
+    box-sizing: content-box;
+    width: 120px;
+    height: 32px;
+    background-color: rgb(109, 131, 242);
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+}
+.down-btn a{
+    text-decoration: none;
+    color: #fff;
+}
+.down-btn button:hover{
+  opacity: 0.5;
+}
+.progress-box1{
+    height: 300px;
+    padding-left: 3em;
+    padding-right: 3em;
+    
+}
+footer{
+    background-color: rgb(109, 131, 242);
+    color: #ffffff;
+    position: fixed;
+   left: 0;
+   bottom: 0;
+   width: 100%;
+}
+.portfolio{
+    display: flex;
+    justify-content: space-around;
+    font-weight: 800;
+}
+.portfolio button{
+    background: #FF9430;
+     width: 10rem;
+     height: 30px;
+     border: none;
+     border-radius: 8px;
+     margin-top: 13px;
+}
+.portfolio button:hover{
+    opacity: 0.7;
+}
+.portfolio button a{
+    color:#ffffff;
+    text-decoration: none;
+    font-weight: 700;
+}
+section{
+    width: 100%;
+    max-width: 1600px;
+}
+.section2 h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 40px;
+    font-weight: 900;
+}
+.section{
+    height: 800px;
+    padding: 10px;
+}
+/* Flexbox styling*/
+.card-box2{
+    margin: 10px;
+    flex: 1;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}
+/*style Counter cards*/
+.card2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    text-align: center;
+    -webkit-box-align: center;
+    background-color:#fff;
+    color: black;
+    height: 300px;
+  }
+  .card2:hover{
+       opacity: 0.7;
+  }
+#head{
+    display: block;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 30px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5px auto; /* 15% from the top and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+    /* Position it in the top right corner outside of the modal */
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* Close button on hover */
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+@media screen and (max-width:1000px) {
+    body{
+        width: 100%;
+    }
+    header{
+        height: 60px;
+        justify-content: space-between;
+    }
+    .logo a{
+        font-size: 0.9rem;
+        margin-left: 7px;
+    }
+     #toggle-Menu{
+        display: inline-block;
+        color: rgb(109, 131, 242);
+        font-size: 24px;
+        margin-right: 10px;
+        margin-top: 15px;
+       
+    }
+     #close-Menu{
+        position: absolute;
+        right: 24px;
+        display: block;
+        font-size: 24px;
+        border-radius: 50%;
+        margin: 10px;
+      
+    }
+    #close-Menu:hover{
+      color:#fff;
+    }
+    nav{
+        position: fixed;
+        top: 0;
+        right:100%;
+        background-color: rgb(109, 131, 242);
+        width: 100%;
+        height:auto;
+        text-align: center;
+        padding: 24px 0;
+        z-index: 100;
+        transition: 0.5s;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+    }
+    li{
+        margin: 2rem 0;  
+    }
+    nav ul li a{
+        color: #fff;
+    }
+    .show{
+        right: 0;
+    
+    }
+    
+    .row1{
+        background-image: url(images/images.png);
+        background-size: cover;
+        background-position: center;
+        width: 100%;
+        margin: 0;
+    }
+    .img-box{
+        display: none;
+    }
+    .profile-box{
+        font-size: 15px;
+        color: white;
+    }
+    .greet-text{
+        font-size: 10px;
+    }
+    .greet-text p{
+        text-align: right;
+    }
+    .section2{
+    margin-top: 100px;
+    height: 1000px;
+    }
+    .card-box2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    .card2{
+        width: 80%;
+        height:auto;
+        margin-top: 5px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    .card2 img{
+        width: fit-content;
+    }
+    section{
+        margin-top: 250px;
+    }
+    section h1{
+        font-size: 20px;
+    }
+    #head{
+       
+        text-align: center;
+    }
+    footer{
+        position: fixed;
+        bottom: 0;
+    }
+    .modal{
+        display: none;
+    }
+}
+@media screen and (max-width:500px) {
+    #greet-text{
+        font-size: 10px;
+    }
+    #name-text{
+        font-size: 10px;
+    }
+    .profile-box{
+        font-size: 8px;
+    }
+    .down-btn button{
+        width:2rem;
+        height: 10px;
+        font-size: 5px;
+    }
+    .Con-btn button{
+        width: 3rem;
+        height: 25px;
+        font-size:7px ;
+    }
+    .card2 img{
+        width: auto;
+    }
+    .portfolio{
+        display: flex;
+        flex-direction: column;
+        margin-left: 50px;
+    }
+}
+@media  screen and (max-width:200px) {
+    .section2{
+        display: none;
+    }
+}

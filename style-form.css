@@ -1,0 +1,87 @@
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+*{
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+body{
+    background: url(images/free.svg);
+    background-repeat: no-repeat;
+    background-color: black;
+   
+}
+/*HEADER*/
+h1{
+    color: #ffffff;
+    font-family: 'Anonymous Pro', monospace;
+}
+/* CONTACT FORM*/
+.form-box{
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    height: 490px;
+    position: absolute;
+    left: 33%;
+    top: 10%;
+    background-color: #f1f1f1f1;
+    box-shadow: rgb(0 0 0 / 15%) 0px 5px 10px;
+    padding: 20px;
+}
+/*INPUT BOX*/
+.form-box input{
+    margin-top: 30px;
+    height: 25px;
+    outline: none;
+    padding-left: 15px;
+}
+.form-box input:focus{
+    background-color: cadetblue;
+}
+.form-box input:hover{
+    background-color: antiquewhite;
+    color: brown;
+}
+/*SELECT BOX*/
+.form-box select{
+    margin-top: 30px;
+    height: 25px;
+    padding-left: 12px;
+}
+.form-box select:focus{
+    background-color: cadetblue;
+}
+/*MESSAGE BOX*/
+textarea{
+    margin-top: 20px;
+    padding-left: 10px;
+}
+#demo{
+    text-align: center;
+    color: darkred;
+    font-family: 'Anonymous Pro', monospace;
+}
+/*submit button*/
+.form-box input[type=submit]{
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    color: whitesmoke;
+    font-family: 'Anonymous Pro', monospace;
+    border: none;
+    outline: none;
+    border-radius: 7px;
+
+
+}
+/* FOR SMARTPHONES*/
+@media  screen and (max-width:800px) {
+    .form-box{
+        width: 50%;
+        height: auto;
+background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 50%, #ffffff 100%);
+
+
+    }
+}

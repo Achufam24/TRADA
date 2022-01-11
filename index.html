@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style-index.css">
+    <link rel="shortcut icon" href="images/images.png" type="image/x-icon">
+    <title>Achu</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#">Achu</a></div>
+        <nav class="nav" id="nav-Menu">
+            <i class="fas fa-times" id="close-Menu"></i>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="files/cv.pdf" target="blank" download="cv.pdf">Resume</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="About.html">About Me</a></li>
+            </ul>
+        </nav>
+        <div class="Con-btn">
+
+            <!-- Button to open the modal login form -->
+<button onclick="document.getElementById('id01').style.display='block'">Hire me!</button>
+
+<!-- The Modal -->
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'"
+class="close" title="Close Modal">&times;</span>
+
+  <!-- Modal Content -->
+  <form class="modal-content animate" action="/action_page.php">
+    <div class="imgcontainer">
+      <img src="images/illustration-desk.svg" alt="Avatar" class="avatar">
+    </div>
+
+    <div class="container">
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Name" name="name" required>
+
+      <label for="psw"><b>Password</b></label>
+      <input type="email" name="email" placeholder="Enter email" required>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+      <input type="submit" value="submit">
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+        </div>
+        <i class="fas fa-bars" id="toggle-Menu"></i>
+    </header>
+    <div  class="row1">
+        <div class="box1">
+       <div class="profile-box">
+           <p id="greet-text">Hello, I'm<br><span id="name-text">Agbama Achu</span></p>
+           <h1>Creative Front-end Developer</h1> 
+           <div class="down-btn">
+               <button><a href="files/cv.pdf" target="blank" download="cv.pdf">Download Resume</a></button>
+               <p id="demo"></p>
+           </div>      
+       </div>
+       <div class="img-box">
+           <img src="images/images.png" alt="image">
+
+       </div>
+       </div>
+    </div>
+</div>
+<section>
+    <span id="head"> My skill set</span>
+    <div class="section2">
+            <div class="card-box2">
+                <div class="card2">
+                    <img src="images/d1.png" alt="df">
+                    <p>front-end Dev</p>
+                </div>
+                <div class="card2" id="card-att">
+                    <img src="images/boostrap.jpg" alt="sh">
+                    <p>Boostrap </p>
+                </div>
+                <div class="card2" id="card-att">
+                    <img src="images/javascript.png" alt="sh">
+                    <p>Js Developer</p>
+                </div>
+            </div>
+        </div>
+</section>
+  
+      <footer>
+          <div class="portfolio">
+              <p>Thanks for checking my portfolio</p>
+          <button><a href="resume.html">Hire Me!</a></button>
+          </div>
+      </footer>
+      
+    <script src="main.js"></script>
+    <script src="./algorithms.js"></script>
+    <script src="https://kit.fontawesome.com/f7ff3f54cb.js"></script>
+</body>
+</html>
