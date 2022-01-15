@@ -19,6 +19,7 @@ const navMenu=document.getElementById('nav-Menu'),
         modal.style.display = "none";
     }
 }
+/*Prompt box*/
 var person = prompt("Please enter your name",  "Harry Potter");
 
 if (person == null || person == "") {
@@ -26,4 +27,4 @@ if (person == null || person == "") {
 } else {
     txt = "Hello " + person + "! Welcome to my Page";
 }
-document.getElementById("demo").innerHTML = txt;
+document.getElementById("prompt").innerHTML = txt;
