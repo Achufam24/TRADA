@@ -9,13 +9,15 @@ body{
     font-family: 'Open Sans', sans-serif;
 }
 
-.row1{
+#row1{
     background: url(images/download.svg);
-    background-repeat: no-repeat;
     background-position: right;
+    background-repeat: no-repeat;
     background-size: contain;
     max-width: 1600px;
     height: 100vh;
+    animation-name: transform;
+    animation-duration: 5s;
 }
 header{
     position: fixed;

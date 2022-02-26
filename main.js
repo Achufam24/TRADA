@@ -27,4 +27,15 @@ if (person == null || person == "") {
 } else {
     txt = "Hello " + person + "! Welcome to my Page";
 }
-document.getElementById("prompt").innerHTML = txt;
+document.getElementById("greet-text1").innerHTML = txt;
+
+//Display time
+setInterval(myFunction, 1000);
+
+function myFunction() {
+  let d = new Date();
+  document.getElementById("time").innerHTML=
+  d.getHours() + ":" +
+  d.getMinutes() + ":" +
+  d.getSeconds();
+}
