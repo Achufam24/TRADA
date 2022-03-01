@@ -64,6 +64,7 @@ class="close" title="Close Modal">&times;</span>
         <div class="box1">
        <div class="profile-box">
         <h3 id="time"></h3>
+        <p id="demo2"></p>
            <p id="greet-text1">Hello, I'm<br><span id="name-text">Agbama Achu</span></p>
            <p id="greet-text">I'm<br><span id="name-text">Agbama Achu</span></p>
            <h1>Creative Front-end Developer</h1> 
@@ -98,14 +99,30 @@ class="close" title="Close Modal">&times;</span>
             </div>
         </div>
 </section>
-  
       <footer>
           <div class="portfolio">
               <p>Thanks for checking my portfolio</p>
-          <button><a href="resume.html">Hire Me!</a></button>
+              <input type="button" value="Github" onclick="linkedin()">
+              <input type="button" value="linkedin" onclick="github()">
           </div>
       </footer>
-      
+      <script>
+      let w;
+
+function startWorker() {
+  if (typeof(w) == "undefined") {
+    w = new Worker("main.js");
+  }
+  w.onmessage = function(event) {
+    document.getElementById("result").innerHTML = event.data;
+  };
+}
+
+function stopWorker() {
+  w.terminate();
+  w = undefined;
+}
+</script>
     <script src="main.js"></script>
     <script src="algorithms.js"></script>
     <script src="https://kit.fontawesome.com/f7ff3f54cb.js"></script>

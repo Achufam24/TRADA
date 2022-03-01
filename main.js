@@ -1,3 +1,4 @@
+//Show and hide nav bar toggle
 const navMenu=document.getElementById('nav-Menu'),
     toggleMenu=document.getElementById('toggle-Menu'),
     closeMenu=document.getElementById('close-Menu')
@@ -20,7 +21,7 @@ const navMenu=document.getElementById('nav-Menu'),
     }
 }
 /*Prompt box*/
-var person = prompt("Please enter your name",  "Harry Potter");
+var person = prompt("Please enter your name",  "USER");
 
 if (person == null || person == "") {
     txt = "Welcome to my page";
@@ -38,4 +39,22 @@ function myFunction() {
   d.getHours() + ":" +
   d.getMinutes() + ":" +
   d.getSeconds();
+};
+//social links with window.location
+function linkedin() {
+  window.location.assign("https://www.linkedin.com/in/achu-agbama-3540951b4/")
+}
+function github() {
+  window.location.assign("https://github.com/Achufam24")
+}
+//device online
+if (navigator.onLine) {
+  alert('Device online')
+}
+else{
+  alert('Offline Mode')
+}
+//history back 
+function page() {
+  window.history.back();
 }

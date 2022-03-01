@@ -121,12 +121,13 @@ footer{
    bottom: 0;
    width: 100%;
 }
+/*footer styling*/
 .portfolio{
     display: flex;
     justify-content: space-around;
     font-weight: 800;
 }
-.portfolio button{
+.portfolio input{
     background: #FF9430;
      width: 10rem;
      height: 30px;
